@@ -24,7 +24,7 @@ class AttendancePage extends StatelessWidget {
                   Text('Scan QR untuk Absen',
                       style: Theme.of(context).textTheme.titleLarge),
                   const SizedBox(height: 8),
-                  const Text('Waktu absensi dibuka pukul 06.30–07.15 WIB'),
+                  const Text('Waktu absensi dibuka pukul 06.30â€“07.15 WIB'),
                   const SizedBox(height: 12),
                   SizedBox(
                     height: 160,
@@ -60,9 +60,9 @@ class AttendancePage extends StatelessWidget {
           ...List.generate(
             6,
             (i) => _AttendanceTile(
-              date: '2025-09-0',
-              status: i % 4 == 0 ? 'Terlambat' : 'Hadir',
-            ),
+              date: '2025-09-${i + 1}',
+      status: i % 4 == 0 ? 'Terlambat' : 'Hadir',
+           }
           ),
         ],
       ),
