@@ -17,26 +17,31 @@ class ProfilePage extends StatelessWidget {
             child: CircleAvatar(
               radius: 44,
               backgroundColor: kPrimaryGreen.withOpacity(0.15),
-              child:
-                  const Icon(Icons.person_rounded, size: 44, color: kPrimaryGreen),
+              child: const Icon(
+                Icons.person_rounded,
+                size: 44,
+                color: kPrimaryGreen,
+              ),
             ),
           ),
           const SizedBox(height: 12),
           Center(
-            child: Text('Danang Junian Widodo',
-                style: Theme.of(context).textTheme.titleLarge),
+            child: Text(
+              'Danang Junian Widodo',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
           ),
           const SizedBox(height: 4),
-          Center(
+          const Center(
             child: Chip(
-              label: const Text('Siswa'),
-              avatar: const Icon(Icons.school_rounded),
+              label: Text('Siswa'),
+              avatar: Icon(Icons.school_rounded),
             ),
           ),
           const SizedBox(height: 16),
-          Card(
+          const Card(
             child: Column(
-              children: const [
+              children: [
                 ListTile(
                   leading: Icon(Icons.badge_rounded),
                   title: Text('NIS'),

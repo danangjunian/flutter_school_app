@@ -39,12 +39,21 @@ class _GreenNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final items = const [
+    const items = [
       BottomNavigationBarItem(icon: Icon(Icons.home_rounded), label: 'Beranda'),
-      BottomNavigationBarItem(icon: Icon(Icons.qr_code_rounded), label: 'Absensi'),
-      BottomNavigationBarItem(icon: Icon(Icons.fact_check_rounded), label: 'Ujian'),
+      BottomNavigationBarItem(
+        icon: Icon(Icons.qr_code_rounded),
+        label: 'Absensi',
+      ),
+      BottomNavigationBarItem(
+        icon: Icon(Icons.fact_check_rounded),
+        label: 'Ujian',
+      ),
       BottomNavigationBarItem(icon: Icon(Icons.task_rounded), label: 'Tugas'),
-      BottomNavigationBarItem(icon: Icon(Icons.bar_chart_rounded), label: 'Nilai'),
+      BottomNavigationBarItem(
+        icon: Icon(Icons.bar_chart_rounded),
+        label: 'Nilai',
+      ),
     ];
     return ClipRRect(
       borderRadius: const BorderRadius.only(

@@ -1,7 +1,6 @@
 // lib/src/ui/pages/auth/signin_page.dart
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../../../theme/app_theme.dart';
 import '../../../services/supabase_service.dart';
 
 class SignInPage extends StatefulWidget {

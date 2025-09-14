@@ -25,30 +25,25 @@ ThemeData buildAppTheme() {
       fontWeight: FontWeight.w700,
       letterSpacing: -0.2,
     ),
-    titleLarge: GoogleFonts.inter(
-      fontSize: 20,
-      fontWeight: FontWeight.w600,
-    ),
+    titleLarge: GoogleFonts.inter(fontSize: 20, fontWeight: FontWeight.w600),
     bodyLarge: GoogleFonts.inter(fontSize: 16, height: 1.4),
     bodyMedium: GoogleFonts.inter(fontSize: 14, height: 1.4),
   );
   return base.copyWith(
     colorScheme: colorScheme,
-    scaffoldBackgroundColor: colorScheme.background,
+    scaffoldBackgroundColor: colorScheme.surface,
     textTheme: textTheme,
     appBarTheme: AppBarTheme(
       elevation: 0,
-      backgroundColor: colorScheme.background,
-      foregroundColor: colorScheme.onBackground,
+      backgroundColor: colorScheme.surface,
+      foregroundColor: colorScheme.onSurface,
       centerTitle: true,
       titleTextStyle: textTheme.titleLarge,
     ),
     cardTheme: CardThemeData(
       elevation: 0,
       color: colorScheme.surface,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       margin: const EdgeInsets.all(12),
     ),
     inputDecorationTheme: InputDecorationTheme(
@@ -57,11 +52,11 @@ ThemeData buildAppTheme() {
       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),
-        borderSide: BorderSide(color: kOutline),
+        borderSide: const BorderSide(color: kOutline),
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),
-        borderSide: BorderSide(color: kOutline),
+        borderSide: const BorderSide(color: kOutline),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),
@@ -74,16 +69,14 @@ ThemeData buildAppTheme() {
         foregroundColor: Colors.white,
         elevation: 0,
         minimumSize: const Size.fromHeight(50),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       ),
     ),
     chipTheme: base.chipTheme.copyWith(
       backgroundColor: kSoftMint,
       selectedColor: kPrimaryGreen.withOpacity(0.15),
       labelStyle: const TextStyle(fontWeight: FontWeight.w600),
-      shape: StadiumBorder(side: BorderSide(color: kOutline)),
+      shape: const StadiumBorder(side: BorderSide(color: kOutline)),
     ),
     dividerTheme: DividerThemeData(
       color: kOutline.withOpacity(0.6),
@@ -91,5 +84,3 @@ ThemeData buildAppTheme() {
     ),
   );
 }
-
-

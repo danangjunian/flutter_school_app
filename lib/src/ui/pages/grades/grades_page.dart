@@ -13,8 +13,8 @@ class GradesPage extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          Row(
-            children: const [
+          const Row(
+            children: [
               Expanded(
                 child: StatCard(
                   title: 'Rata-Rata',
@@ -53,8 +53,11 @@ class GradesPage extends StatelessWidget {
 }
 
 class _GradeTile extends StatelessWidget {
-  const _GradeTile(
-      {required this.subject, required this.score, this.trendUp = true});
+  const _GradeTile({
+    required this.subject,
+    required this.score,
+    this.trendUp = true,
+  });
   final String subject;
   final int score;
   final bool trendUp;
