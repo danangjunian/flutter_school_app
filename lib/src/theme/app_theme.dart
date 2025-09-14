@@ -40,7 +40,7 @@ ThemeData buildAppTheme() {
       centerTitle: true,
       titleTextStyle: textTheme.titleLarge,
     ),
-    cardTheme: CardThemeData(
+    cardTheme: CardTheme(
       elevation: 0,
       color: colorScheme.surface,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
